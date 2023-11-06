@@ -1,0 +1,81 @@
+main {
+    overflow: hidden;
+}
+h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 3em;
+    font-weight: 100;
+    z-index: 0;
+    position: relative;
+    top: -4rem;
+    animation: drop-heading 1s 1 forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes drop-heading {
+    0% {top: -4rem;}
+    100% {top: 1rem;}
+}
+
+.pack {
+    display: inline-block;
+    border-radius: 1em;
+    max-width: 85%;
+    width: max-content;
+    overflow: hidden;
+    margin: 3em 1em;
+    box-shadow: 6px 5px 10px rgba(36, 36, 36, 0.7);
+    opacity: 0;
+    animation: fade-package 1.2s 1 forwards;
+    animation-delay: 0.5s;
+}
+
+
+@keyframes fade-package {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.pack ul li {
+    font-size: 1.6em;
+    background-color:#f0f0f0;
+    color: #2d2c2d;  
+    padding: 0.3em 2rem;
+    border-bottom: 1px solid rgba(36, 36, 36, 0.1);
+    
+}
+.pack ul li:first-child, .pack ul .price {
+    background-color:#242424;
+    font-size: 1.8em;
+    color: #f0f0f0;
+}
+
+.pack ul .price {
+    background-color:#2d2c2d;
+    color: #dfcd00;
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+}
+
+.pack ul .cent {
+    font-size: 0.65em;
+}
+
+.pack ul li.btn-plan {
+    background-color:#242424;
+    font-size: 1.8em;
+    color: #f0f0f0;
+    transition: all 0.8s;
+}
+
+.pack ul li.btn-plan:hover {
+    background-color:rgba(240, 240, 240, 0.1);
+}
+
+.pack ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    color: #f0f0f0;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,0 +1,57 @@
+body {
+    overflow: auto;
+}
+
+main {
+    overflow: hidden;
+}
+
+h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 3em;
+    font-weight: 100;
+    z-index: 0;
+    position: relative;
+    top: -4rem;
+    animation: drop-heading 1s 1 forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes drop-heading {
+    0% {top: -4rem;}
+    100% {top: 1rem;}
+}
+
+.sites {
+    display: inline-block;
+    width: 90%;
+    margin: 1em auto;
+    opacity: 0;
+    animation: fade-sites 1.2s 1 forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fade-sites {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.sites li {
+    width: 33%;
+    display: inline-block;
+    padding: 0.5em;
+    box-sizing: border-box;
+    font-size: 1.4em;
+    text-shadow: 4px 4px 5px rgba(43, 42, 43, 0.5);
+}
+
+.sites li img {
+    width: 85%;
+    border-radius: 0 0 0.7em 0;
+    box-shadow: 4px 4px 5px rgba(43, 42, 43, 0.5);
+    transition: all 0.3s;
+}
+
+.sites li img:hover {
+    cursor: pointer;
+    border-radius: 0 0.7em 0.7em 0.7em;
+}

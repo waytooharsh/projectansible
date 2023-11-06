@@ -1,0 +1,43 @@
+main {
+    overflow: hidden;
+}
+h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 3em;
+    font-weight: 100;
+    z-index: 0;
+    margin-bottom: 3em;
+    position: relative;
+    top: -4rem;
+    animation: drop-heading 1s 1 forwards;
+    animation-delay: 0.5s;
+}
+@keyframes drop-heading {
+    0% {top: -4rem;}
+    100% {top: 6rem;}
+}
+
+main ul li {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    letter-spacing: 3px;
+    opacity: 0;
+    animation: fade 1s 1 forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+main ul li:first-child {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+main ul li img {
+    height: 1em;
+    margin-right: 0.3em;
+    vertical-align: -0.1em;
+    opacity: 0.8;
+}
